@@ -1,6 +1,6 @@
 /* =========================
    Fredges Corporate Site CSS
-   Green Theme White Text Version
+   Light + Green Accent Mixed Theme
    ========================= */
 
 * {
@@ -12,39 +12,37 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
   line-height: 1.7;
-  color: #ffffff;
-  background: linear-gradient(180deg, #064e3b 0%, #065f46 40%, #047857 100%);
+  color: #111827;
+  background: #f3f4f6;
 }
 
 header {
-  background: linear-gradient(135deg, #064e3b, #065f46);
+  background: linear-gradient(135deg, #064e3b, #059669);
   color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 header, section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 56px 20px;
+  padding: 32px 20px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
-  color: #ffffff;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 800;
-  margin-bottom: 24px;
-  margin-top: 40px;
-  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 28px;
+  color: #064e3b;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 h2::after {
@@ -52,64 +50,76 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 50px;
-  height: 4px;
-  background: #a7f3d0;
+  width: 44px;
+  height: 3px;
+  background: #10b981;
   border-radius: 2px;
 }
 
 p {
   font-size: 14px;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 12px;
+  color: #111827;
+  margin-bottom: 10px;
 }
 
 .block-title {
-  font-weight: 800;
-  margin-top: 20px;
+  font-weight: 700;
+  margin-top: 18px;
   margin-bottom: 6px;
   font-size: 14px;
-  color: #d1fae5;
+  color: #065f46;
 }
 
 ul {
   padding-left: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 li {
   font-size: 14px;
   margin-bottom: 6px;
-  color: rgba(255,255,255,0.85);
+  color: #111827;
 }
 
-/* card style sections */
+/* default section = white card */
 section {
-  background: rgba(255,255,255,0.08);
-  margin-top: 18px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  border: 1px solid rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
+  background: #ffffff;
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  border: 1px solid #e5e7eb;
+}
+
+/* alternating subtle green tint sections */
+section:nth-of-type(odd) {
+  background: #ffffff;
+}
+
+section:nth-of-type(even) {
+  background: #f0fdf4;
+}
+
+/* header override spacing balance */
+header {
+  border-radius: 0 0 14px 14px;
 }
 
 /* links */
 a {
-  color: #a7f3d0;
+  color: #059669;
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
-  color: #ffffff;
-  opacity: 0.85;
+  color: #047857;
 }
 
 /* buttons */
 button, .btn {
-  background: linear-gradient(135deg, #10b981, #059669);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
-  padding: 10px 16px;
+  padding: 10px 14px;
   border: none;
   border-radius: 8px;
   font-weight: 700;
@@ -120,7 +130,7 @@ button:hover, .btn:hover {
   opacity: 0.9;
 }
 
-/* spacing between sections */
+/* tighter spacing improvement */
 section + section {
-  margin-top: 24px;
+  margin-top: 14px;
 }
