@@ -1,5 +1,6 @@
 /* =========================
    Fredges Corporate Site CSS
+   Green Theme Version
    ========================= */
 
 * {
@@ -11,44 +12,49 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
   line-height: 1.7;
-  color: #222;
-  background-color: #fff;
+  color: #1f2937;
+  background: #f6f8f7;
+}
+
+header {
+  background: linear-gradient(135deg, #0f766e, #16a34a);
+  color: #fff;
+  border-bottom: none;
 }
 
 header, section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 48px 20px;
-}
-
-header {
-  border-bottom: 1px solid #eee;
+  padding: 56px 20px;
 }
 
 h1 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 24px;
   margin-top: 40px;
+  color: #0f172a;
 }
 
 p {
   font-size: 14px;
-  color: #333;
+  color: #334155;
   margin-bottom: 12px;
 }
 
 .block-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 6px;
   font-size: 14px;
+  color: #0f172a;
 }
 
 ul {
@@ -59,18 +65,49 @@ ul {
 li {
   font-size: 14px;
   margin-bottom: 6px;
+  color: #334155;
 }
 
 .section-divider {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e2e8f0;
 }
 
-/* subtle hover for links if added later */
+/* card-like sections */
+section {
+  background: #ffffff;
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+
+header {
+  border-radius: 0 0 16px 16px;
+}
+
+/* links */
 a {
-  color: #111;
-  text-decoration: underline;
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
-  opacity: 0.7;
+  opacity: 0.75;
+}
+
+/* subtle accent line under h2 */
+h2 {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #16a34a;
+  border-radius: 2px;
 }
