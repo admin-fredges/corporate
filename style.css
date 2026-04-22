@@ -22,6 +22,14 @@ header {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
+/* ensure all header text is white */
+header h1,
+header h2,
+header p,
+header a {
+  color: #ffffff;
+}
+
 header, section {
   max-width: 900px;
   margin: 0 auto;
