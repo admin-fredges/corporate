@@ -334,7 +334,7 @@ function StrengthsSection({
     idx: "01",
     k: "Data-driven",
     jp: "データに基づいた意思決定",
-    body: "感覚ではなく、計測データと事業KPIに紐づいた仮説検証を起点に運用判断を行います。媒体ダッシュボードに閉じず、CRM・受注データまで含めたファネル全体を一つの数字として扱います。",
+    body: "感覚ではなく、計測データと事業KPIに紐づいた仮説検証を起点に運用判断を行います。媒体ダッシュボードに閉じず、受注データまでを含めたファネル全体を一つの数字として扱います。",
     proof: "GA4 / GTM / Looker Studio / BigQuery",
     slot: "str-01",
     photo: PHOTOS.dashboard
@@ -342,7 +342,7 @@ function StrengthsSection({
     idx: "02",
     k: "Speed",
     jp: "スピード感のある対応",
-    body: "立ち上げから改善サイクルまで短納期で進行。週次定例ではなく日次で意思決定を回し、媒体の変化や事業の優先度の入れ替わりに即応します。",
+    body: "立ち上げから改善サイクルまで短期で進行。週次ではなく日次で意思決定を回し、媒体の変化や事業の優先度の入れ替わりに即応します。",
     proof: "リアルタイムで改善",
     slot: "str-02",
     photo: PHOTOS.speed
@@ -523,7 +523,7 @@ function ProcessSection({
     k: "Deploy",
     jp: "実行・運用",
     body: "日次で予算とクリエイティブを回しながら、CPA・ROASを引き直します。",
-    detail: "アカウント実装 / 配信開始 / 日次レビュー / Slack伴走 / 週次レポート。",
+    detail: "アカウント実装 / 配信開始 / 定期レビュー",
     slot: "proc-03",
     photo: PHOTOS.laptop
   }, {
@@ -990,7 +990,7 @@ function SiteFooter({
       color: "color-mix(in oklch, var(--ink) 55%, var(--paper))",
       textTransform: "uppercase"
     }
-  }, "\xA9 2026 Fredges, Inc. \u2014 Tokyo, Aoyama"), /*#__PURE__*/React.createElement("div", {
+  }, "\xA9 2026 Fredges Ltd. \u2014 Tokyo"), /*#__PURE__*/React.createElement("div", {
     className: "en",
     style: {
       fontSize: 12,
